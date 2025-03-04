@@ -15,7 +15,7 @@ rouletteSizeStyle.innerHTML = `
 `
 document.head.appendChild(rouletteSizeStyle);
 
-pointer.style.left = `calc(50vw + (${getComputedStyle(roulette).width}/2) + 85px)`
+pointer.style.left = `calc(50vw + (${getComputedStyle(roulette).width}/2) + 13.5vh)`
 
 const createRotateAnimation = (random_rotation) => {
     cursor_rotate_animation = '@keyframes cursor_rotate{';
@@ -27,10 +27,10 @@ const createRotateAnimation = (random_rotation) => {
         }
         cursor_rotate_animation += `
         ${i}%{
-            transform: translate(-5px, 10px) rotate(-12deg);
+            transform: translate(-1.2vh, 2vh) rotate(-12deg);
         }
         ${i+0.7}%{
-            transform: translate(-5px, 10px) rotate(-5deg);
+            transform: translate(-1.2vh, 2vh) rotate(-5deg);
         }`
         i+=0.7
     }

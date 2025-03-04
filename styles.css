@@ -40,34 +40,34 @@
 }
 @keyframes beggining_cursor_rotate{
     0%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
     8%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
     12%{
-        transform: translate(-5px, 10px) rotate(-15deg);
+        transform: translate(-1.2vh, 2vh) rotate(-15deg);
     }
     23%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
     25%{
-        transform: translate(-5px, 10px) rotate(-12deg)
+        transform: translate(-1.2vh, 2vh) rotate(-12deg)
     }
     30%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
     35%{
-        transform: translate(-5px, 10px) rotate(-12deg)
+        transform: translate(-1.2vh, 2vh) rotate(-12deg)
     }
     40%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
     45%{
-        transform: translate(-5px, 10px) rotate(-12deg)
+        transform: translate(-1.2vh, 2vh) rotate(-12deg)
     }
     52%{
-        transform: translate(-5px, 10px) rotate(-5deg)
+        transform: translate(-1.2vh, 2vh) rotate(-5deg)
     }
 }
 :root{
@@ -93,10 +93,10 @@ html, body{
     overflow: hidden;
 }
 body{
-    border: 15px solid var(--wood-border);
-    outline: 10px solid var(--wood-outline);
+    border: 2.5vh solid var(--wood-border);
+    outline: 5vh solid var(--wood-outline);
     background-color: var(--background);
-    outline-offset: -10px;
+    outline-offset: -1.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +105,7 @@ body{
     --roulette-background2: rgb(214, 12, 12);
 }
 #border{
-    box-shadow: 0 0 10px inset #222;
+    box-shadow: 0 0 1vh inset #222;
     z-index: 99;
     height: 100%;
     width: 100%;
@@ -113,7 +113,7 @@ body{
     pointer-events: none;
 }
 #roulette{
-    border-width: 10px;
+    border-width: 1.4vh;
     outline-offset: -1px;
     height: var(--size);
     width: var(--size);
@@ -151,7 +151,7 @@ body{
     transform: rotate(135deg);
 }
 #middle__dot{
-    border-width: 10px;
+    border-width: 1.4vh;
     height: calc(var(--size)*0.14);
     width: calc(var(--size)*0.14);
     z-index: 3;
@@ -178,11 +178,10 @@ body{
 .rewards{
     position: absolute;
     color: #000;
-    width: 195px;
     width: calc(var(--size)*0.39);
     height: calc(var(--size)*0.08);
     text-align: center;
-    font-size: 20px;
+    font-size: 3vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 999;
     cursor: pointer;
@@ -225,27 +224,27 @@ body{
     transform: rotate(-67.5deg) translate(calc(var(--size)*-0.778), calc(var(--size)*-0.007)) scale(-1,-1);
 }
 #pointer{
-    outline: 5px solid var(--wood-outline);
-    border: 5px solid var(--wood-border);
-    outline-offset: -10px;
+    outline: 0.8vh solid var(--wood-outline);
+    border: 1.2vh solid var(--wood-border);
+    outline-offset: -1.4vh;
     height: calc(var(--size)*0.76);
-    width: 40px;
+    width: 6vh;
     position: absolute;
     background-color: var(--wood-background);
     z-index: 3;
     top: calc(var(--size)*0.035);
     filter: drop-shadow(6px 6px 6px var(--blue-shadow)); 
-    transform: scale(calc(var(--size) * 2));
+    transform: scale(calc(var(--size) * 2));    
 }
 #rotator{
     position: absolute;
     border-radius: 50%;
     bottom: 0;
-    transform: translate(-5px, 10px) rotate(-5deg);
-    height: 40px;
-    width: 40px;
+    transform: translate(-1.1vh, 2vh) rotate(-5deg);
+    height: 6.7vh;
+    width: 6.7vh;
     background-color: var(--wood-outline);
-    outline: solid 12px var(--wood-border);
+    outline: solid 2vh var(--wood-border);
     outline-offset: -1px;
     z-index: 3;
     animation: beggining_cursor_rotate infinite 4s linear;
@@ -254,18 +253,18 @@ body{
 #rotator::before{
     content: '';
     background-color: var(--screw);
-    height: 15px;
-    width: 15px;
-    transform: translate(12.5px, 12.5px);
+    height: 2.4vh;
+    width: 2.4vh;
+    transform: translate(calc(6.7vh/2 - 1.2vh), calc(6.7vh/2 - 1.2vh));
     position: absolute;
     box-shadow: 0px 0px 2px inset rgb(68, 68, 68);
 }
 #rotator::after{
     content: '';
     background-color: var(--screw);
-    height: 15px;
-    width: 15px;
-    transform: translate(12.5px, 12.5px) rotate(45deg);
+    height: 2.4vh;
+    width: 2.4vh;
+    transform: translate(calc(6.7vh/2 - 1.2vh), calc(6.7vh/2 - 1.2vh)) rotate(45deg);
     outline: 3px solid var(--screw-outline);
     outline-offset: -7px;
     position: absolute;
@@ -274,62 +273,62 @@ body{
     position: absolute;
     bottom: 0;
     z-index: -2;
-    height: 35px;
-    width: 85px;
-    transform: translate(-85px, -5px);
-    outline: 5px solid var(--wood-outline);
-    border: 5px solid var(--wood-border);
-    outline-offset: -10px;
+    height: 5.5vh;
+    width: 13vh;
+    transform: translate(-13vh, -0.8vh);
+    outline: 0.8vh solid var(--wood-outline);
+    border: 1vh solid var(--wood-border);
+    outline-offset: -1.6vh;
     background-color: var(--wood-background);
 }
 #cursor{
     position: absolute;
     bottom: 0;
-    height: 40px;
-    width: 48px;
-    transform: translate(-100px, -5px) rotate(-45deg) scale(1.2);
+    height: 6.5vh;
+    width: 6.5vh;
+    transform: translate(-15vh, -0.3vh) rotate(-45deg) scale(1.2);
     background-image: linear-gradient(-228deg, var(--wood-outline) 0%, var(--wood-outline) 50%, transparent 50%);
 }
 #cursor::before{
     content: '';
     position: absolute;
-    height: 30px;
-    width: 30px;
+    height: 5.6vh;
+    width: 5.9vh;
     border-color: var(--wood-border);
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-width: 6px;
+    border-width: 0.4vh;
     border-style: solid;
 }
 #cursor::after{
     content: '';
     position: absolute;
-    border: solid 4px transparent;
-    border-left: solid 6px var(--wood-border);
-    height: 51px;
-    transform: rotate(46deg) translate(9px, -17px);
+    border: solid 0.7vh transparent;
+    border-left: solid 0.8vh var(--wood-border);
+    height: 8vh;
+    transform: rotate(45deg) translate(1.3vh, -2.7vh);
 }
 #top__connect{
-    border: solid 10px var(--wood-border);
+    border: solid 1vh var(--wood-border);
     border-top: none;
     background-color: var(--wood-outline);
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     z-index: 10;
-    height: 35px;
-    width: 90px;
+    height: 6vh;
+    width: 12vh;
     position: absolute;
-    transform: translate(-30px, -8px);
+    transform: translate(-4vh, -1.6vh);
     filter: drop-shadow(0 2px 1px rgb(124, 31, 31));
 }
 #menu{
-    outline: solid 10px var(--wood-outline);
-    border: 10px var(--wood-border) solid;
+    outline: solid 2vh var(--wood-outline);
+    border: 2vh var(--wood-border) solid;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
-    outline-offset: -18px;
+    outline-offset: -3vh;
     height: 85%;
     width: 20%;
     left: 2%;
@@ -341,12 +340,12 @@ body{
 }
 #menu #connect{
     position: absolute;
-    border-left: solid 10px var(--wood-border);
-    border-right: solid 10px var(--wood-border);
+    border-left: solid 1.4vh var(--wood-border);
+    border-right: solid 1.4vh var(--wood-border);
     background-color: var(--wood-outline);
     box-shadow: 0px 0px 5px inset rgb(124, 31, 31);
     height: 12vh;
-    width: 35px;
+    width: 5.5vh;
     z-index: 3;
     display: flex;
     justify-content: center;
@@ -355,10 +354,10 @@ body{
 #menu #connect #screw{
     position: absolute;
     border: solid 10px var(--wood-border);
-    height: 60px;
-    width: 60px;
+    height: 9vh;
+    width: 9vh;
     bottom: 0;
-    transform: translateY(30px);
+    transform: translateY(4.5vh);
     border-radius: 50%;
     background-color: var(--wood-outline);
     display: flex;
@@ -369,19 +368,19 @@ body{
 #menu #connect #screw::before{
     content: '';
     background-color: var(--screw);
-    height: 15px;
-    width: 15px;
+    height: 2.4vh;
+    width: 2.4vh;
     box-shadow: 0px 0px 2px inset rgb(68, 68, 68);
     position: absolute;
 }
 #menu #connect #screw::after{
     content: '';
     background-color: var(--screw);
-    height: 15px;
-    width: 15px;
+    height: 2.4vh;
+    width: 2.4vh;
     position: absolute;
     outline: 3px solid var(--screw-outline);
-    outline-offset: -20px;
+    outline-offset: -7px;
     transform: rotate(45deg);
 }
 #menu #container{
@@ -393,24 +392,26 @@ body{
 }
 #menu h2{
     color: #fff;
+    font-size: 3.4vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 #menu #inputs{
     display: flex;
     flex-direction: column;
-    width: 120%;
-    gap: 4px;
-    margin-top: 10%;
+    width: 15.5vw;
+    gap: 0.6vh;
+    margin-top: 2vh;
 }
 #menu #inputs input{
     text-align: center;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
     border-top-right-radius: 50%;
+    font-size: 2.1vh;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
-    border: 4px solid var(--input-border);
+    border: 0.7vh solid var(--input-border);
     background-color: var(--input-background);
     color: #fff;
     box-shadow: 0 0 3px brown;
@@ -425,10 +426,10 @@ body{
     border: solid 4px var(--button-border);
     color: #fff;
     outline: none;
-    padding: 5px;
+    padding: 4%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 2.8vh;
     box-shadow: 0 0 3px brown;
     cursor: pointer;
 }
